@@ -4,24 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KL MODA FITNESS</title>
-    
+    <link rel="stylesheet" href="style/index.css">
 </head>
 
 <body>
     <!-- CABEÇALHO/MENU-->
     <header>
-        <h1>KL MODA FITNESS</h1>
+        <div class="topo">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Logo da KL Moda Fitness">  
+                    </div>
+                    <!-- caixa de pesquisa -->
+                    <div class="caixa-pesquisa">
+                        <img src="assets/pesquisablack.png" alt="Ícone de pesquisa"> 
+                        <input type="text" placeholder="O que você está procurando?">
+                     
+                    </div>
+                    <!-- ÍCONES -->
+                    <div class="icones">
+                        <a href="">
+                            <img src="assets/usuario.png" alt="login">
+                            <SMALL>Olá visitante</SMALL>
+                            <p>ENTRAR</p>
+                        </a>
+                        <a href="">
+                            <img src="assets/carrinho.png" alt="carrinho">
+                            <SMALL>Meu</SMALL>
+                            <p>CARRINHO</p>
+                        </a>
+                    </div>
+        </div>  
         <!-- MENU DE NAVEGAÇÃO -->
-        <NAV>
+        <NAV class="menu">
             <a href="#">LEGGINS</a>
             <a href="#">CONJUNTOS</a>
             <a href="#">TOP</a>
-            <a href="#">REGATA</a>
+            <a id="idregata" href="#">REGATA</a>
             <a href="#">BODY</a>
             <a href="#">MACACÃO</a>
             <a href="#">BLOG</a>
         </NAV>
     </header>
+
+    
     
 </body>
 
