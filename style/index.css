@@ -17,8 +17,9 @@ text-align: center; /*ALINHAMENTO DO TEXTO DOS LINKS */
 border-color: #FFFFFF; /*COR DA BORDA DO MENU DE NAVEGAÇÃO */
 border-width: 1px; /*LARGURA DA BORDA DO MENU DE NAVEGAÇÃO */
 border-style: solid; /*ESTILO DA BORDA DO MENU DE NAVEGAÇÃO */
+height: 30px; /*ALTURA DO MENU DE NAVEGAÇÃO */
 
-
+padding-top: 10px; /*DISTANCIA ENTRE O TEXTO DOS LINKS E A BORDA SUPERIOR DO MENU DE NAVEGAÇÃO */
 }
 
 .logo img{
@@ -73,6 +74,9 @@ border-style: solid; /*ESTILO DA BORDA DO MENU DE NAVEGAÇÃO */
     width: 30px; /*LARGURA DOS ICONES DE USUÁRIO E CARRINHO */
     margin-right: 20px; 
     /*DISTANCIA ENTRE OS ICONES DE USUÁRIO E CARRINHO AO LADO DIREITO */
+    grid-row: 1 / 3; 
+    /*OCUPA AS DUAS LINHAS DA GRADE PARA ALINHAR OS ICONES VERTICALMENTE */
+
 }
 
 /*CONFIGURANDO O TEXTO DOS ICONES DE USUÁRIO E CARRINHO*/
@@ -80,16 +84,25 @@ border-style: solid; /*ESTILO DA BORDA DO MENU DE NAVEGAÇÃO */
     font-size: 10px; /*TAMANHO DA FONTE DO TEXTO PEQUENO */
     display: block; /*EXIBE O TEXTO EM UMA NOVA LINHA */
     color: #FFFFFF; /*COR DO TEXTO PEQUENO */ 
+    grid-column: 2; /*OCUPA A SEGUNDA COLUNA DA GRADE PARA ALINHAR O TEXTO AO LADO DIREITO DOS ICONES */
+    grid-row: 1; /*OCUPA A PRIMEIRA LINHA DA GRADE PARA ALINHAR O TEXTO VERTICALMENTE COM OS ICONES */
+    margin:0; /*REMOVE A MARGEM PADRÃO DO ELEMENTO SMALL */
 }
 .icones a p{
     font-size: 12px; /*TAMANHO DA FONTE DO TEXTO GRANDE */
     display: block; /*EXIBE O TEXTO EM UMA NOVA LINHA */
     color: #FFFFFF; /*COR DO TEXTO GRANDE */  
-     
+    grid-column: 2; /*OCUPA A SEGUNDA COLUNA DA GRADE PARA ALINHAR O TEXTO AO LADO DIREITO DOS ICONES */
+    grid-row: 2; /*OCUPA A SEGUNDA LINHA DA GRADE PARA ALINHAR O TEXTO VERTICALMENTE COM OS ICONES */
+    margin:0; /*REMOVE A MARGEM PADRÃO DO ELEMENTO SMALL */
+
 }
 .icones a{
     text-decoration: none; /*REMOVE O SUBLINHADO DOS LINKS */
-    
+    display:grid; /*EXIBE OS ELEMENTOS EM LINHA */
+    grid-template-columns: 40px auto;
+    grid-template-rows: auto auto;
+    margin-right: 20px; /*DISTANCIA ENTRE OS ICONES DE USUÁRIO E CARRINHO AO LADO DIREITO */
 }
 /*configurando a div icones*/
 .icones{
@@ -97,4 +110,19 @@ border-style: solid; /*ESTILO DA BORDA DO MENU DE NAVEGAÇÃO */
     align-items: center;/*ALINHAMENTO VERTICAL DOS ELEMENTOS */
     gap: 30px;/*DISTANCIA ENTRE OS ELEMENTOS */
 
+}
+
+/*configurando a área do banner*/
+.imagens-banner img{
+    max-width: 100%; /*LARGURA MÁXIMA DO BANNER */
+    
+    
+/*AJUSTA A IMAGEM PARA COBRIR TODO O ESPAÇO DO BANNER SEM DISTORCER A IMAGEM */
+}
+.banner{
+    display:flex;/*EXIBE OS ELEMENTOS EM LINHA */
+    justify-content:space-between;
+    /*DISTRIBUIÇÃO DOS ELEMENTOS COM ESPAÇO ENTRE ELES */
+    align-items:center;/*ALINHAMENTO VERTICAL DOS ELEMENTOS */
+   
 }
